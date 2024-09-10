@@ -31,10 +31,7 @@ const App=()=>{
             <ul>
                 {todos.map((todo,id)=>(
                     <li key={id}>
-                         <input
-                         value={todo}
-                         onChange={(e)=>editTodo(id,e.target.value)}
-                         />
+                        {todo}
                          <button onClick={()=>editTodo(id)}>Edit</button>
                         <button onClick={()=>deleTodo(id)}>Delete</button>
                         </li>
